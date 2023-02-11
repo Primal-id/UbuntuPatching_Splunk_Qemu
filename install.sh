@@ -29,7 +29,7 @@ fi
 printf '[\33[01;31m  Downloading Splunk  \33[01;37m]\n'
 sleep 3s
 ###EDIT BELOW FOR CURRENT FORWARDER VERSION###
-wget -O splunkforwarder-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/9.0.3/linux/splunkforwarder-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb"
+wget -O splunkforwarder-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb "https://download.splunk.com/products/universalforwarder/releases/9.0.3/linux/splunkforwarder-<INSERT VERSION HERE>.deb"
 printf '[\33[01;31m  install Splunk  \33[01;37m]\n'
 sleep 3s
 
@@ -49,8 +49,8 @@ sleep 3s
 printf '[\33[01;31m  Setup Splunk forwarader and deployment server  \33[01;37m]\n'
 sleep 3s
 
-/opt/splunkforwarder/bin/splunk add forward-server 192.168.69.62:9997
-/opt/splunkforwarder/bin/splunk set deploy-poll 192.168.69.62:8089
+/opt/splunkforwarder/bin/splunk add forward-server <INSERT SPLUNK IP>:9997
+/opt/splunkforwarder/bin/splunk set deploy-poll <INSERT SPLUNK IP>:8089
 
 printf '[\33[01;31m  Set /var/log ingestion  \33[01;37m]\n'
 sleep 3s
