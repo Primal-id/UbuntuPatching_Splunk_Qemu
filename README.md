@@ -25,7 +25,9 @@ Here are some ideas to get you started:
  
  Make sure you update the wget line for Splunk Universal forwarder and add IP address of Splunk server. You will be prompted for username and password for the Splunk UF
  
- Run script as root and make sure you run command chmod +x install.sh before running with ./install.sh
+ Run script as root 
+ 
+ <blockquote>chmod +x install.sh && ./install.sh</blockquote>
 
 
 
