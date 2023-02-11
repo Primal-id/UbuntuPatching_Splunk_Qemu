@@ -64,7 +64,7 @@ sleep 3s
 
 /opt/splunkforwarder/bin/splunk start --accept-license
 
-### CAN THIS BE SCRIPTED - INVESTIGATE INPUTING CREDENTIALS
+### CAN THIS BE SCRIPTED - INVESTIGATE INPUTING CREDENTIALS AND ENTERING Y ON ACCEPT LINE
 ###/opt/splunkforwarder/bin/splunk show default-hostname -auth {splunk}:{brvncrzy}
 
 printf '[\33[01;31m  Completed  \33[01;37m]\n'
