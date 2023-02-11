@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script will update repositories, patch Ubuntu, install Qemu for Proxmox if necessary
+# This script will check for updates, patch Ubuntu, install Qemu for Proxmox if necessary
 # install Splunkforwarder and configure
 #
 #
