@@ -70,6 +70,9 @@ printf '[\33[01;31m  Completed  \33[01;37m]\n'
 cd /opt/splunkforwarder/bin/
 ./splunk status
 
+#####################################################
+# Check for Splunk service and start if not running #
+#####################################################
 if [[ $(./splunk status) == *splunkd is not running.* ]]; then
   printf '[\33[01;31m  Start Splunk service  \33[01;37m]\n'
   ./splunk start
