@@ -1,7 +1,7 @@
 ### Hi there 👋
 
 <!--
-**Primal-id/Primal-id** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Primal-id/UbuntuPatching_Splunk_Qemu** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
