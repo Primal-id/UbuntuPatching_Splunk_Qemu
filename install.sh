@@ -74,9 +74,10 @@ cd /opt/splunkforwarder/bin/
 #####################################################
 # Check for Splunk service and start if not running #
 #####################################################
-if [[ $(./splunk status) == *"splunkd is not running."* ]]; then
-  printf '[\33[01;31m  Start Splunk service  \33[01;37m]\n'
-  ./splunk start
-else
-	printf '[\33[01;31m  Ok  \33[01;37m]\n'
-fi
+# EXPERIMENTAL #
+#if [[ $(./splunk status) == *"splunkd is not running."* ]]; then
+#  printf '[\33[01;31m  Start Splunk service  \33[01;37m]\n'
+#  ./splunk start
+#else
+#	printf '[\33[01;31m  Ok  \33[01;37m]\n'
+#fi
