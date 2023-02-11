@@ -27,7 +27,7 @@ Here are some ideas to get you started:
  
  Run script as root 
  
- <blockquote>chmod +x install.sh && ./install.sh</blockquote>
+ <strong><blockquote>chmod +x install.sh && ./install.sh</blockquote></strong>
 
 
 
