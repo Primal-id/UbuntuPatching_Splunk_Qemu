@@ -73,6 +73,7 @@ sleep 3s
 printf '[\33[01;31m  Setup Splunk forwarader and deployment server  \33[01;37m]\n'
 sleep 3s
 
+###EDIT BELOW FOR Splunk server IP address###
 /opt/splunkforwarder/bin/splunk add forward-server <INSERT SPLUNK IP ADDRESS>:9997
 /opt/splunkforwarder/bin/splunk set deploy-poll  <INSERT SPLUNK IP ADDRESS>:8089
 
