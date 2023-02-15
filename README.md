@@ -23,7 +23,7 @@ Here are some ideas to get you started:
  This script will check for updates, patch Ubuntu, install Qemu for Proxmox if necessary, install Splunk Universal Fowarder and basic configure
  
  
- Make sure you update the wget line for Splunk Universal forwarder and add IP address of Splunk server. You will be prompted for username and password for the Splunk UF
+ Make sure you update the wget line for Splunk Universal forwarder to the needed version, edit the path to the download directory and add the IP address of your Splunk server(s). You will be prompted for username and password for the Splunk UF during the install.
  
  Run script as root 
  
