@@ -34,7 +34,7 @@ wget -O splunkforwarder-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb "https://download
 printf '[\33[01;31m  Install Splunk  \33[01;37m]\n'
 sleep 3s
 
-
+### EDIT "id" To REFLECT USER PACKAGE WAS DOWNLOADED TO ###
 if [ -d "/home/id" ] 
 then
 	dpkg -i /home/id/splunkforwarder-*.deb
