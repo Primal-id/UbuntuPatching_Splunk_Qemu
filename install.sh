@@ -34,10 +34,10 @@ wget -O splunkforwarder-9.0.3-dd0128b1f8cd-linux-2.6-amd64.deb "https://download
 printf '[\33[01;31m  Install Splunk  \33[01;37m]\n'
 sleep 3s
 
-### EDIT "id" To REFLECT USER PACKAGE WAS DOWNLOADED TO ###
-if [ -d "/home/id" ] 
+### EDIT BELOW TO REFLECT LOCATION PACKAGE WAS DOWNLOADED TO ###
+if [ -d "/home/<USERNAME>" ] 
 then
-	dpkg -i /home/id/splunkforwarder-*.deb
+	dpkg -i /home/<USERNAME>/splunkforwarder-*.deb
 else
 	dpkg -i /root/splunkforwarder-*.deb
 fi
@@ -53,7 +53,7 @@ sleep 3s
 ###EDIT BELOW FOR Splunk server IP address###
 /opt/splunkforwarder/bin/splunk add forward-server <INSERT SPLUNK IP>:9997
 /opt/splunkforwarder/bin/splunk set deploy-poll <INSERT SPLUNK IP>:8089
-
+https://github.com/Primal-id/UbuntuPatching_Splunk_Qemu
 printf '[\33[01;31m  Set /var/log ingestion  \33[01;37m]\n'
 sleep 3s
 
