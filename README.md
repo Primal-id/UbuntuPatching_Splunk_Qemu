@@ -36,6 +36,8 @@ Here are some ideas to get you started:
  - You will have to respond to the unattended setup prompt
  - You will be prompted for username and password for the Splunk UF during the install
  - Command to check for running splunk process is not currently working as written and may need started manually
+
+
  
  Run script as root 
  
