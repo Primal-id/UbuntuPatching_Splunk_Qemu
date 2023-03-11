@@ -21,14 +21,17 @@ Here are some ideas to get you started:
 
 
  This script will:
- - check for updates
- - patch Ubuntu
- - install unattended upgrades
- - install Qemu for Proxmox LXC containers if necessary
- - install Splunk Universal Fowarder and basic configure for search head and deployment server
+ - Check for updates
+ - Patch Ubuntu
+ - Install unattended upgrades
+ - Install Qemu for Proxmox LXC containers if necessary
+ - Install Splunk Universal Fowarder and basic configure for search head and deployment server
  
- 
- Make sure you update the wget line for Splunk Universal forwarder to the needed version, edit the path to the download directory and add the IP address of your Splunk server(s). You will be prompted for username and password for the Splunk UF during the install.
+ Things to do before running:
+ - Update the wget line for Splunk Universal forwarder to the needed version
+ - Edit the path to the download directory for Splunk UF
+ - Add the IP address of your Splunk server(s).
+ - Note: You will be prompted for username and password for the Splunk UF during the install.
  
  Run script as root 
  
