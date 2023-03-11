@@ -30,7 +30,7 @@ Here are some ideas to get you started:
  Things to do before running:
  - Update the wget line for Splunk Universal forwarder to the needed version
  - Edit the path to the download directory for Splunk UF
- - Add the IP address of your Splunk server(s).
+ - Add the IP address of your Splunk server(s)
  
  Note:
  - You will have to respond to the unattended setup prompt
