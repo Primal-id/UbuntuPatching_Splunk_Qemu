@@ -13,6 +13,14 @@ apt update
 apt upgrade -y && apt dist-upgrade -y
 printf '[\33[01;31m  Patching complete  \33[01;37m]\n'
 
+##########################################
+# Install unattended upgrades and enable #
+##########################################
+printf '[\33[01;31m  Install and enable unattended upgrades  \33[01;37m]\n'
+sleep 3s
+apt-get install unattended-upgrades -y
+dpkg-reconfigure -plow unattended-upgrades
+
 ######################
 # Install Qemu agent #
 ######################
