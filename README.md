@@ -31,7 +31,11 @@ Here are some ideas to get you started:
  - Update the wget line for Splunk Universal forwarder to the needed version
  - Edit the path to the download directory for Splunk UF
  - Add the IP address of your Splunk server(s).
- - Note: You will be prompted for username and password for the Splunk UF during the install.
+ 
+ Note:
+ - You will have to respond to the unattended setup prompt
+ - You will be prompted for username and password for the Splunk UF during the install
+ - Command to check for running splunk process is not currently working as written and may need started manually
  
  Run script as root 
  
