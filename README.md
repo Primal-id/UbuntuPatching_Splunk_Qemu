@@ -26,7 +26,7 @@ Here are some ideas to get you started:
  - Install unattended upgrades
  - Install Qemu for Proxmox LXC containers if necessary
  - Install Splunk Universal Fowarder and basic configure for search head and deployment server
- - - Install SNMP (configuring SNMP will have to be done after install)
+ - Install SNMP (configuring SNMP will have to be done after install)
  
  Things to do before running:
  - Update the wget line for Splunk Universal forwarder to the needed version
