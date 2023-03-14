@@ -4,9 +4,9 @@
 # install Splunk Universal Fowarder  and configure
 #
 #
-######################################
-# Install updates and other packages #
-######################################
+###################
+# Install updates #
+###################
 printf '[\33[01;31m  This will check updates and patch  \33[01;37m]\n'
 sleep 3s
 apt update
@@ -20,6 +20,22 @@ printf '[\33[01;31m  Install and enable unattended upgrades  \33[01;37m]\n'
 sleep 3s
 apt-get install unattended-upgrades -y
 dpkg-reconfigure -plow unattended-upgrades
+
+################
+# Install SNMP #
+################
+printf '[\33[01;31m  Install SNMP  \33[01;37m]\n'
+sleep 3s
+apt install snmpd snmp snmp-mibs-downloader -y
+
+### NOT WORKING
+#sed 's/agentaddress  127.0.0.1,[::1]/#agentaddress  127.0.0.1,[::1]' /etc/snmp/snmpd.conf
+#ed 's/#rocommunity public/rocommunity public/' /etc/snmp/snmpd.conf
+#ed 's/rocommunity  public default -V systemonly/#rocommunity  public default -V systemonly/' /etc/snmp/snmpd.conf
+#ed 's/rocommunity6 public default -V systemonly/#rocommunity6 public default -V systemonly/' /etc/snmp/snmpd.conf
+#cho 'rocommunity public' >> /etc/snmp/snmpd.conf
+#cho 'agentAddress udp:161,udp6:[::1]:161' >> /etc/snmp/snmpd.conf
+#ystemctl restart snmpd
 
 ######################
 # Install Qemu agent #
